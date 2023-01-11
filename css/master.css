@@ -185,9 +185,6 @@ header ul a:hover {
 }
 
 .nav-icon:hover span:nth-child(2) {
-    /* right: -1000%; */
-    /* top: 50%; */
-    /* width: 150%; */
     transform: translateX(-30%);
 }
 
@@ -203,14 +200,15 @@ header ul .fa-x {
 
 @media (max-width: 850px) {
     header ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         position: absolute;
         padding: 60px 20px;
         background: #fff;
-        right: -100%;
+        /* right: -100%; */
+        right: 0;
         top: 0;
-        width: 40%;
+        width: 50%;
         height: 100vh;
         transition: var(--main-transition);
     }

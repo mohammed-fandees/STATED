@@ -9,7 +9,7 @@ let pre = document.querySelector("#pre");
 let next = document.querySelector("#next");
 let iPre = document.querySelector("#i-pre");
 let iNext = document.querySelector("#i-next");
-onscroll = (_) => {
+onscroll = () => {
 	navStyle();
 	const currentScroll = document.documentElement.scrollTop + 250;
 	sections.forEach((section) => {
