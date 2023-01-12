@@ -325,9 +325,9 @@ header ul .fa-x {
 /* End Home */
 /* Start Properties */
 
-.prop {
-    padding: 80px 0;
+.prop .parent {
     background: var(--sec-color);
+    padding: 50px 0;
 }
 
 .prop .grid-system {
@@ -490,7 +490,7 @@ header ul .fa-x {
 }
 
 .agents .agent .card {
-    background: var(--sec-color);
+    background: #f0f0f0;
 }
 
 .agents .agent .image {
@@ -511,7 +511,7 @@ header ul .fa-x {
     gap: 20px;
     align-items: center;
     position: absolute;
-    bottom: 5px;
+    bottom: 4px;
     left: -50px;
     transition: var(--main-transition);
 }

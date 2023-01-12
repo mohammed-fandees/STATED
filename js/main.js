@@ -9,6 +9,9 @@ let pre = document.querySelector("#pre");
 let next = document.querySelector("#next");
 let iPre = document.querySelector("#i-pre");
 let iNext = document.querySelector("#i-next");
+
+// Navbar style in cases
+
 onscroll = () => {
 	navStyle();
 	const currentScroll = document.documentElement.scrollTop + 250;
@@ -74,6 +77,8 @@ function defaultUl() {
 	a.forEach((el) => el.classList.remove('b-links'));
 }
 
+// Swiper JS
+
 var swiper = new Swiper('.mySwiper', {
 	slidesPerView: 1,
 	spaceBetween: 30,
@@ -114,12 +119,15 @@ var swiper = new Swiper('.mySecSwiper', {
 	},
 });
 
-var swiper = new Swiper('.myThirdSwiper', {});
+var swiper = new Swiper('.myThirdSwiper', {
+	autoplay: {
+		delay: 4000
+	}
+});
 
 
 pre.addEventListener('click', (el) => {
     el.preventDefault();
-    
 });
 
 next.addEventListener('click', (el) => {
@@ -128,12 +136,13 @@ next.addEventListener('click', (el) => {
 
 iPre.addEventListener('click', (el) => {
     el.preventDefault();
-    
 });
 
 iNext.addEventListener('click', (el) => {
     el.preventDefault();
 });
+
+// Email JS
 
 document.getElementById("button-send").addEventListener("click", (e) => {
 	e.preventDefault();
